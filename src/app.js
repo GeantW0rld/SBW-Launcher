@@ -12,6 +12,7 @@ const fs = require('fs');
 
 const UpdateWindow = require("./assets/js/windows/updateWindow.js");
 const MainWindow = require("./assets/js/windows/mainWindow.js");
+const DRPC = require("discord-rpc");
 
 let dev = process.env.NODE_ENV === 'dev';
 
@@ -114,3 +115,34 @@ autoUpdater.on('error', (err) => {
     const updateWindow = UpdateWindow.getWindow();
     if (updateWindow) updateWindow.webContents.send('error', err);
 });
+
+// discord RPC
+
+const clientId = "1237448371589877892"
+
+const rpc = new DRPC.Client({transport: "ipc"})
+const stp = new Date()
+
+async function setrpc() {
+    if (!rpc || !MainWindow) {
+        return;
+    }
+
+    const name = "SkyBeWorld Minecraft"
+
+    rpc.setActivity({
+        details: `playing ${name}`,
+        startTimestamp: stp,
+        instance: false
+    })
+}
+
+rpc.on('ready', () => {
+    setrpc();
+
+    setInterval(() => {
+        setrpc()
+    }, 13e3);
+})
+
+rpc.login({ clientId }).catch(console.error)
