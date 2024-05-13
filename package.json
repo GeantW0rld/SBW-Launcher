@@ -1,7 +1,7 @@
 {
     "name": "SBW-Launcher",
     "preductname": "SkyBeWorld Launcher",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Launcher Mincraft pour le serveur SkyBeWorld",
     "main": "src/app.js",
     "author": {
@@ -24,7 +24,7 @@
     "dependencies": {
         "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
-        "minecraft-java-core": "^3.10.2",
+        "minecraft-java-core": "^3.10.3",
         "node-bdd": "^2.0.3",
         "node-fetch": "^2.7.0",
         "xml-js": "^1.6.11"
