@@ -1,7 +1,7 @@
 {
     "name": "SBW-Launcher",
     "preductname": "SkyBeWorld Launcher",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Launcher Mincraft pour le serveur SkyBeWorld",
     "main": "src/app.js",
     "author": {
