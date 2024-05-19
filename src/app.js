@@ -118,7 +118,7 @@ autoUpdater.on('error', (err) => {
 
 // discord RPC
 
-const clientId = "1237448371589877892"
+const clientId = "1187042030006837248"
 
 const rpc = new DRPC.Client({transport: "ipc"})
 const stp = new Date()
@@ -129,11 +129,14 @@ async function setrpc() {
     }
 
     const name = "SkyBeWorld Minecraft"
+    const image = "sbw_icon"
 
     rpc.setActivity({
         details: `playing ${name}`,
         startTimestamp: stp,
-        instance: false
+        instance: false,
+        largeImageKey: image,
+        largeImageText: "SkyBeWorld Launcher"
     })
 }
 
