@@ -118,7 +118,7 @@ autoUpdater.on('error', (err) => {
 
 // discord RPC
 
-const clientId = "1187042030006837248"
+/* const clientId = "1187042030006837248"
 
 const rpc = new DRPC.Client({transport: "ipc"})
 const stp = new Date()
@@ -148,4 +148,4 @@ rpc.on('ready', () => {
     }, 13e3);
 })
 
-rpc.login({ clientId }).catch(console.error)
+rpc.login({ clientId }).catch(console.error) */
