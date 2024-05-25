@@ -1,7 +1,7 @@
 {
     "name": "SBW-Launcher",
     "preductname": "SkyBeWorld Launcher",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Launcher Mincraft pour le serveur SkyBeWorld",
     "main": "src/app.js",
     "author": {
@@ -9,7 +9,7 @@
         "email": "contact@SkyBeWorld.com",
         "url": "https://github.com/skybeworld"
     },
-    "url": "http://pnode1.danbot.host:1483/online",
+    "url": "https://launcher.geantworld.free.hwhost.fr",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
