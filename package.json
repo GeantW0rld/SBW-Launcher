@@ -1,13 +1,13 @@
 {
     "name": "SBW-Launcher",
     "preductname": "SkyBeWorld Launcher",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "description": "Launcher Mincraft pour le serveur SkyBeWorld",
     "main": "src/app.js",
     "author": {
         "name": "SkyBeWorld, Inc.",
         "email": "contact@SkyBeWorld.com",
-        "url": "https://github.com/skybeworld"
+        "url": "http://geantworld.c1.is"
     },
     "url": "https://launcher.geantworld.free.hwhost.fr",
     "scripts": {
