@@ -39,7 +39,7 @@ class Config {
 
     async getNews() {
         this.config = await this.GetConfig().then(res => res);
-        let news = `https://skybeworld.azuriom.cloud/api/rss`
+        let news = `https://minecraft.skybeworld.com/api/rss`
         let rss = await fetch(news).then(res => res.text());
         let rssparse = JSON.parse(convert.xml2json(rss, { compact: true }));
         let data = [];
