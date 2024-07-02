@@ -1,7 +1,7 @@
 {
     "name": "SBW-Launcher",
     "preductname": "SkyBeWorld Launcher",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Launcher Mincraft pour le serveur SkyBeWorld",
     "main": "src/app.js",
     "author": {
@@ -9,7 +9,7 @@
         "email": "contact@SkyBeWorld.com",
         "url": "https://skybeworld.com"
     },
-    "url": "https://launcher.skybeworld.com",
+    "url": "https://files.skybeworld.com/launcher",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
