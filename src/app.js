@@ -118,7 +118,7 @@ autoUpdater.on('error', (err) => {
 
 // discord RPC
 
-/* const clientId = "1187042030006837248"
+const clientId = "1274655795572637767"
 
 const rpc = new DRPC.Client({transport: "ipc"})
 const stp = new Date()
@@ -132,9 +132,8 @@ async function setrpc() {
     const image = "sbw_icon"
 
     rpc.setActivity({
-        details: `playing ${name}`,
-        startTimestamp: stp,
         instance: false,
+        startTimestamp: stp,
         largeImageKey: image,
         largeImageText: "SkyBeWorld Launcher"
     })
@@ -148,4 +147,4 @@ rpc.on('ready', () => {
     }, 13e3);
 })
 
-rpc.login({ clientId }).catch(console.error) */
+rpc.login({ clientId }).catch(console.error)
